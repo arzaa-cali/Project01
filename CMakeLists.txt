@@ -10,7 +10,7 @@ include(FetchContent)                                                  # Activat
 
 FetchContent_Declare(SFML                                              # Fetch.._Declare(...) : Describe where to find SFML
     GIT_REPOSITORY https://github.com/SFML/SFML.git
-    GIT_TAG 3.0.2                                                      # version (MUST FIX A VERSION or the project could break)
+    GIT_TAG 3.1.0                                                      # version (MUST FIX A VERSION or the project could break)
     GIT_SHALLOW ON                                                     # only download this version (way faster)
     EXCLUDE_FROM_ALL                                                   # compiles only the parts that is being used in the project
     SYSTEM                                                             # display only warnings from the code of SFML
