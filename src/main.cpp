@@ -1,5 +1,23 @@
-#include <iostream>
+#include <SFML/Graphics.hpp>
 
-int main() {
-    return 0;
+int main() 
+{    
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "Project01");
+    window.setFramerateLimit(60);
+
+    while(window.isOpen()) 
+    {
+        while(std::optional event = window.pollEvent()) 
+        {
+            if (event->is<sf::Event::Closed>()) 
+            {
+                window.close();
+            }
+        }
+        window.clear(sf::Color::Black);
+        
+        // drawing is here
+
+        window.display();
+    }
 }
